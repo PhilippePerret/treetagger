@@ -8,6 +8,7 @@ Install the module with: `npm install treetagger`
 ```javascript
 var Treetagger = require('treetagger');
 var tagger = new Treetagger();
+// or var tagger = new TreeTagger({language:'french'}) for another language
 tagger.tag("This is a test!", function (err, results) {
     console.log(results);
 });
